@@ -180,6 +180,9 @@ pip-selfcheck.json
 
 ##PPT FILES
 *.ppt
+*.pptx
 *.mp4
-
+*.jpg
+*.png
+*.jpeg
 # End of https://www.toptal.com/developers/gitignore/api/venv,python,macos
