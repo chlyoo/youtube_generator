@@ -103,6 +103,47 @@ else:
         os.remove(mp4_path)
     print('Failed:The ppt may have unknown elements. You can try to convert it manual.')
 #3. Youtube Upload
+title= '영상제목'
+descr = '영상내용'
+kwords = '영상 키워드, 컴마로 구분'
+categ = 22 #영상 카테고리 
+"""
+2 - Autos & Vehicles
+1 -  Film & Animation
+10 - Music
+15 - Pets & Animals
+17 - Sports
+18 - Short Movies
+19 - Travel & Events
+20 - Gaming
+21 - Videoblogging
+22 - People & Blogs
+23 - Comedy
+24 - Entertainment
+25 - News & Politics
+26 - Howto & Style
+27 - Education
+28 - Science & Technology
+29 - Nonprofits & Activism
+30 - Movies
+31 - Anime/Animation
+32 - Action/Adventure
+33 - Classics
+34 - Comedy
+35 - Documentary
+36 - Drama
+37 - Family
+38 - Foreign
+39 - Horror
+40 - Sci-Fi/Fantasy
+41 - Thriller
+42 - Shorts
+43 - Shows
+44 - Trailers
+"""
+prvacy = 'public'#영상 공개여부 public, private, unlisted 중 하나
+upllll = f'python upload_video.py --file="{mp4_path}"" --title="{title}" --description="{descr}" --keywords="{kwords}" --category="{categ}" --privacyStatus="{prvacy}"'
 #3.1 Login to YOUTUBE
 #3.2 Upload Generated video to YOUTUBE
 #동영상으로 변환
+os.system(upllll)
