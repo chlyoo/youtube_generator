@@ -33,7 +33,7 @@ for item in os.listdir(f"./data/{today}"):
 
 
 #img_path = '/data/monty-truth.png'
-filename = today+"_utub.ppt"
+filename = today+"_utub.pptx"
 
  #오늘 날짜를 가지고 파일이름 생성
 prs.save(filename) #PPT저장 
