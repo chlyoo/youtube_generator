@@ -105,7 +105,7 @@ else:
 #3. Youtube Upload
 title= '영상제목'
 descr = '영상내용'
-kwords = '영상 키워드, 컴마로 구분'
+kwords = '영상키워드'
 categ = 22 #영상 카테고리 
 """
 2 - Autos & Vehicles
@@ -142,8 +142,9 @@ categ = 22 #영상 카테고리
 44 - Trailers
 """
 prvacy = 'public'#영상 공개여부 public, private, unlisted 중 하나
-upllll = f'python upload_video.py --file="{mp4_path}"" --title="{title}" --description="{descr}" --keywords="{kwords}" --category="{categ}" --privacyStatus="{prvacy}"'
+upllll = f'python upload_video.py --file="{mp4_path}" --title="{title}" --description="{descr}" --keywords="{kwords}" --category="{categ}" --privacyStatus="{prvacy}"'
 #3.1 Login to YOUTUBE
 #3.2 Upload Generated video to YOUTUBE
 #동영상으로 변환
+print(upllll)
 os.system(upllll)
